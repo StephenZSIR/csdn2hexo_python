@@ -14,7 +14,7 @@ class InitSetting:
         is_first_view = self.props.get('is_first')
         if is_first_view=='False':
             is_first==False
-        if not is_first:
+        if is_first:
             self.settingInit()
             self.welcomeUI()
         else:
